@@ -40,7 +40,6 @@ export default async function handler(req, res) {
   });
 
   const data = await response.json();
-  console.log('LINE response status:', response.status);
-  console.log('LINE response body:', JSON.stringify(data));
-  return res.status(response.ok ? 200 : 400).json(data);
+  console.log('LINE status:', response.status, 'body:', JSON.stringify(data));
+  return res.status(200).json({ lineStatus: response.status, lineBody: data, msg });
 }

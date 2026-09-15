@@ -6,7 +6,7 @@ export default async function handler(req, res) {
   if (req.method === 'OPTIONS') return res.status(200).end();
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
-  const TOKEN = 'tkzqlx+erMpQwg21AiUOL+fZvJtXHf/pjV0NqvHuwi/dZ4ws0hL2k7CJdVWE9CU9q+BVyWFck+nEHE9EvOXunXhp2GntBOQ9ukf8iE8UnhzLfN8nM78IeifLtTP34iwmP/RXoFxEcs5+GR+7XrW0GwdB04t89/1O/w1cDnyilFU=';
+  const TOKEN = 'nb7EChDsthza7diKHbYLm8UQjDbXrf5M7XRXuXiY+1lnLIoLdB81PzygNghRzL5Uq+BVyWFck+nEHE9EvOXunXhp2GntBOQ9ukf8iE8UnhzXigbJc3HKGzfSKtkXLrW+mhkdeOxki+CUG9wrh7A14AdB04t89/1O/w1cDnyilFU=';
   const USER_ID = 'U220888fc8aae5781571b9c1f9e2a18ac';
   const GROUP_ID = 'C0409981af74da73014be53891e1bd1e3';
 

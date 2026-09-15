@@ -17,7 +17,7 @@ export default async function handler(req, res) {
   if (body.type === 'registration') {
     msg = body.message;
   } else if (body.name && body.phone && body.date) {
-    msg = `📋 購票規則同意通知\n━━━━━━━━━━━━━\n👤 姓名：${body.name}\n📱 手機：${body.phone}\n📅 日期：${body.date}\n✅ 已勾選同意所有購票規則`;
+    msg = `📋 購票規則同意通知\n━━━━━━━━━━━━━\n👤 姓名：${body.name}\n📱 手機：${body.phone}\n📅 回簽日期：${body.date}\n✅ 已勾選同意所有購票規則`;
   } else if (body.date) {
     msg = body.date;
   } else {
